@@ -47,10 +47,12 @@ nav a:hover{
     display: flex;
     flex-direction: column;
     margin-left: 25%;
+    margin-right:25%;
 }
 
 #home-content img{
-    width: 200px;
+    margin-top:150px;
+    width: 250px;
     border-radius: 50%;
 }
 
@@ -99,8 +101,8 @@ nav a:hover{
 }
 
 .education-school img{
-    width:150px;
-    height:150px;
+    width:200px;
+    height:200px;
 }
 
 .education-school-textbox{
