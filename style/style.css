@@ -113,6 +113,10 @@ nav a:hover{
     font-size: 23px;
 }
 
+footer{
+    height: 10em;
+}
+
 @media screen and (max-width: 1200px){
     nav{
         display: flex;
