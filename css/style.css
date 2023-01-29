@@ -1,221 +1,176 @@
-/* ---- particles.js container ---- */
-html {
-  background-color: black;
+html{
+  margin: 0;
 }
 
-body {
+body{
   background-color: black;
+  font-family: 'Courier New', Courier, monospace !important;
 }
 
-#root {
+#root{
   position: absolute;
 }
 
-#particles-js {
+#particles-js{
   background-color: black;
 }
 
-.navbar-link-underscore {
-  color: white;
-  /*text-decoration: underline !important;*/
+.container{
+  min-width: 100vw;
+  padding: 1% !important;
 }
 
-.about-container {
+.navbar-link-underscore{
+  color: white;
+}
+
+.about-container{
   padding: 5%;
   min-height: 85vh;
 }
 
-h1,
-h2,
-h3 {
-  color: lightcyan;
-  text-shadow: 5px 5px 10px white;
+h1, h2, h3{
 }
 
-h4,
-h5,
-h6 {
-  color: white;
+h4, h5, h6{
+
 }
 
-.about-container-text {
-  color: lightcyan;
+.about-container-text{
+  
 }
 
-.about-container-image {
+.about-container-image{
   display: block !important;
   margin: 0 auto !important;
-  box-shadow: 5px 5px 10px white !important;
+  
 }
 
-.about-container-image-mobile {
+.about-container-image-mobile{
   display: none;
   margin: 0 auto;
   margin-bottom: 5%;
-  box-shadow: 5px 5px 10px white;
 }
 
-.about-container-codewars-badge {
+.about-container-codewars-badge{
   margin-top: 4%;
 }
 
-.projects-container {
+.projects-container{
   padding: 3%;
   min-height: 85vh;
 }
 
-.projects-container-project {
+.projects-container-project{
   width: 25% !important;
-  margin: 0 auto !important;
 }
 
-.projects-container-project-view {
+.projects-container-project-view{
   width: 70% !important;
-  margin: 0 auto !important;
+  margin-left: 5% !important;
 }
 
-.projects-container-card {
+.projects-container-card{
   margin-bottom: 5%;
   border: none !important;
-  box-shadow: 5px 5px 10px white;
 }
 
-.projects-container-card-button {
+.projects-container-card-button{
   background-color: transparent !important;
   border: 2px solid black !important;
   color: black !important;
   margin: 0.5%;
 }
 
-.projects-container-card-button:hover {
+.projects-container-card-button:hover{
   background-color: black !important;
-  color: white !important;
 }
 
-.education-container {
-  color: lightcyan;
+.education-container{
   padding: 3%;
   min-height: 85vh;
   text-align: center;
 }
 
-.education-container-image {
+.education-container-image{
   display: block;
   margin: 0 auto;
   margin-bottom: 5%;
-  box-shadow: 5px 5px 10px white;
 }
 
-.skills-container {
+.skills-container{
   padding: 3%;
   min-height: 85vh;
   text-align: center;
 }
 
-.skills-container-languages-container {
+.skills-container-languages-container{
   text-align: start;
   display: flex;
   justify-content: center;
 }
 
-.skill-container-progress-bar {
+.skill-container-progress-bar{
   margin: 1%;
 }
 
-.footer-container {
-  color: white;
+.footer-container{
   min-width: 100vw;
   text-align: center;
 }
 
 @media screen and (max-width: 992px) {
-  .about-container-image-mobile {
+  .about-container-image-mobile{
     display: block;
   }
 
-  .about-container-image {
+  .about-container-image{
     display: none !important;
   }
 
-  .projects-container-project {
+  .projects-container-project{
     width: 100% !important;
   }
-
-  .projects-container-project-view {
+  
+  .projects-container-project-view{
     width: 100% !important;
+    margin-left: 5% !important;
   }
 }
 
-.hidden {
+.hidden{
   display: none !important;
 }
 
-.show {
-  display: block !important;
-}
-
 /*COLORS*/
-.bg-JAVA {
+.bg-JAVA{
   background-color: #ff0000 !important;
 }
 
-.bg-REACT {
+.bg-REACT{
   background-color: #00d8ff !important;
 }
 
-.bg-PHP {
+.bg-PHP{
   background-color: #4F5D95 !important;
 }
 
-.bg-ELIXIR {
+.bg-ELIXIR{
   background-color: #9473e6 !important;
 }
 
-.bg-C {
+.bg-C{
   background-color: #555555 !important;
 }
 
-.bg-PYTHON {
+.bg-PYTHON{
   background-color: #3572A5 !important;
 }
 
-.bg-SQL {
+.bg-SQL{
   background-color: #FF8C00 !important;
 }
 
-.bg-FIREBASE {
+.bg-FIREBASE{
   background-color: #FFC300 !important;
-}
-
-.bg-AZURE {
-  background-color: #0078D7 !important;
-}
-
-.bg-DEVOPS {
-  background-color: #0078D7 !important;
-}
-
-.bg-GIT {
-  background-color: #FFC300 !important;
-}
-
-.bg-NODEJS {
-  background-color: #2E2E2E !important;
-}
-
-.bg-POSTGRESQL {
-  background-color: #FF8C00 !important;
-}
-
-.bg-MYSQL {
-  background-color: #FF8C00 !important;
-}
-
-.skills-row{
-  margin-top:10% !important;
-}
-
-.badge{
-  margin-left: 1%;
-  box-shadow: 2px 2px 5px white;
 }
