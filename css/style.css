@@ -16,22 +16,6 @@ body{
   margin-bottom: 5px;
 }
 
-.education-container{
-  padding: 3%;
-  min-height: 85vh;
-  text-align: center;
-}
-
-.education-container-image{
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 5%;
-}
-
-.hidden{
-  display: none !important;
-}
-
 /*COLORS*/
 .bg-JAVA{
   background-color: #ff0000 !important;
