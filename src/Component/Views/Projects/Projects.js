@@ -1,6 +1,6 @@
 import { Row, Button, Form } from 'react-bootstrap';
 import React from 'react';
-import { ProjectCard } from '../../Elements/ProjectCard/ProjectCard';
+import { ProjectCard } from './ChildComponents/ProjectCard/ProjectCard';
 import { project_data } from '../../../Data/project_data';
 
 function Projects() {
