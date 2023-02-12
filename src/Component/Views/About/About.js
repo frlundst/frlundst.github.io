@@ -3,7 +3,7 @@ import { AiOutlineLinkedin, AiOutlineGithub } from 'react-icons/ai';
 import { useNavigate } from 'react-router-dom';
 import './style.css';
 import React from 'react';
-import { Listing } from '../../Elements/Listing/Listing';
+import { Listing } from './ChildComponents/Listing/Listing';
 
 function About() {
     const navigate = useNavigate();

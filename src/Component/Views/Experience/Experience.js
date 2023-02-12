@@ -6,6 +6,7 @@ export const Experience = () => {
     return (
         <div className="education-container">
             <h1>Experience</h1>
+            <h2>Work</h2>
 
             <h2>Education</h2>
             <br/>

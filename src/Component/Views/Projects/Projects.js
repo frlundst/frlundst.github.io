@@ -31,7 +31,7 @@ function Projects() {
 
             <br />
 
-            <Form style={{ width: "400px", display: "flex", columnGap: "20px" }}>
+            <Form style={{ maxWidth: "400px", display: "flex", columnGap: "20px", flexWrap: "nowrap" }}>
                 <Form.Select
                     value={sort}
                     onChange={(e) => setSort(e.target.value)}

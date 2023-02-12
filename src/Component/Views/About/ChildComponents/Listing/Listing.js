@@ -1,4 +1,4 @@
-import { timeSince } from "../../../Internalization/timeSince";
+import { timeSince } from "../../../../../Internalization/timeSince";
 import "./style.css";
 import { Image } from "react-bootstrap";
 
