@@ -1,0 +1,11 @@
+.education-container{
+    padding: 3%;
+    min-height: 85vh;
+    text-align: center;
+  }
+  
+  .education-container-image{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 5%;
+  }
