@@ -1,6 +1,6 @@
 import { timeSince } from "../../../Internalization/timeSince";
 import "./style.css";
-import { Image, Row } from "react-bootstrap";
+import { Image } from "react-bootstrap";
 
 export const Listing = ({ imagePathname, title, time, type}) => {
     const formatTitle = () => {
@@ -47,7 +47,7 @@ export const Listing = ({ imagePathname, title, time, type}) => {
                 break;
         }
 
-        return <h6>{result + " "}<strong><a href={`https://github.com/${title}`} target="_blank" style={{color: "black"}} >{title}</a></strong></h6>;
+        return <h6>{result + " "}<strong><a href={`https://github.com/${title}`} target="_blank" rel="noreferrer" style={{color: "black"}} >{title}</a></strong></h6>;
     }
     return <div className="listing">
         <Image src={imagePathname} className="listing-image" fluid roundedCircle />

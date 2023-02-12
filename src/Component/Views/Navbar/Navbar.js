@@ -4,7 +4,6 @@ import { MdWorkOutline } from 'react-icons/md';
 
 function MyNavbar(props) {
     let navigate = useNavigate();
-    var current = window.location.pathname;
 
     return (
         <Navbar style={{borderBottom: "1px solid black"}} bg="transparent" variant="light">

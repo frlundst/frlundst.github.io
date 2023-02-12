@@ -27,7 +27,7 @@ function About() {
             </Row>
             <Row xs={1} lg={2}>
                 <Col>
-                    <h1>Hi! I'm Fredrik! Test</h1>
+                    <h1>Hi! I'm Fredrik!</h1>
                     <h2>Studying Computer Science at KTH</h2>
                     <p>
                         Currently in my last year of studying BSc Computer Science
