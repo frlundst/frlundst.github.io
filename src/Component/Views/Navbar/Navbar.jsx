@@ -8,7 +8,7 @@ function MyNavbar(props) {
     return (
         <Navbar style={{ borderBottom: "1px solid black" }} bg="transparent" variant="light" expand="lg">
             <Container>
-                <Navbar.Brand href="/">Portfolio <MdWorkOutline></MdWorkOutline></Navbar.Brand>
+                <Navbar.Brand href="/">Fredrik Lundström <MdWorkOutline></MdWorkOutline></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav style={{marginLeft: "auto"}} >

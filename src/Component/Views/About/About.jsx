@@ -28,7 +28,7 @@ function About() {
             <Row xs={1} lg={2}>
                 <Col>
                     <h1>Hi! I'm Fredrik!</h1>
-                    <h2>Studying Computer Science at KTH</h2>
+                    <h2>.NET & React Developer and Computer Science Engineer</h2>
                     <p>
                         Currently in my last year of studying BSc Computer Science
                         at Kungliga Tekniska Högskolan (KTH) in Stockholm. I am

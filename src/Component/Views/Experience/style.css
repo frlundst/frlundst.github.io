@@ -1,11 +1,27 @@
+@keyframes experience-card {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.experience-card{
+  animation-name: experience-card;
+  animation-duration: 1s;
+}
+
 .education-container{
-    padding: 3%;
-    min-height: 85vh;
-    text-align: center;
-  }
+  padding: 3%;
+  min-height: 85vh;
+  text-align: center;
+}
   
-  .education-container-image{
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 5%;
-  }
+.education-container-image{
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 5%;
+}
