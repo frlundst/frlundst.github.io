@@ -13,8 +13,8 @@ function MyNavbar(props) {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav style={{marginLeft: "auto"}} >
                         <Nav.Link onClick={() => navigate("/")}>Home</Nav.Link>
-                        <Nav.Link onClick={() => navigate("/projects")}>Projects</Nav.Link>
                         <Nav.Link onClick={() => navigate("/experience")}>Experience</Nav.Link>
+                        <Nav.Link onClick={() => navigate("/projects")}>Projects</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

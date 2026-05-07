@@ -16,9 +16,9 @@ function App() {
           <Route path="*" element={<h1 style={{ textAlign: "center", margin: "50px 0px" }}>404 Not found</h1>} />
           <Route path="/" element={<About />} />
           <Route path="/" element={<About />} />
+          <Route path="/experience" element={<Experience />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/projects/:id" element={<Project />} />
-          <Route path="/experience" element={<Experience />} />
         </Routes>
       </Container>
       <Footer />

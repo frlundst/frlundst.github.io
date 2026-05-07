@@ -9,8 +9,8 @@ export const project_data = [
             "MovieboxDB is a movie tracking website that allows users to search for specific movies and discover movies. It also allows users to add movies in a watchlist or a favourites list."
         ],
         images: [
-            "/images/moviebox_home.png",
-            "/images/moviebox_search.png"
+            "/resources/moviebox_home.png",
+            "/resources/moviebox_search.png"
         ],
         github: "https://github.com/frlundst/MovieboxDB",
         website: "https://movieboxdb.web.app",
@@ -41,7 +41,7 @@ export const project_data = [
             "Unfortunately, I am not allowed to show any more of this project."
         ],
         images:[
-            "/images/hendigo_home.png"
+            "/resources/hendigo_home.png"
         ],
         website: "https://hendigo.se",
         technologies: [
@@ -73,7 +73,7 @@ export const project_data = [
         subtitle: "Let's predict the weather with machine learning!",
         descriptions: [],
         images: [
-            "/images/weatherbrain_home.jpg"
+            "/resources/weatherbrain_home.jpg"
         ],
         github: "https://github.com/CasperKristiansson/Weather-Predictor",
         website: "https://weatherbrainproject.web.app/",
@@ -103,13 +103,13 @@ export const project_data = [
         subtitle: "An e-commerce website for tech and gaming gadgets.",
         descriptions: [],
         images: [
-            "/images/espace_home.jpg",
-            "/images/espace_category.jpg",
-            "/images/espace_products.jpg",
-            "/images/espace_cart.jpg",
-            "/images/espace_checkout.jpg",
-            "/images/espace_order.jpg",
-            "/images/espace_admin.jpg"
+            "/resources/espace_home.jpg",
+            "/resources/espace_category.jpg",
+            "/resources/espace_products.jpg",
+            "/resources/espace_cart.jpg",
+            "/resources/espace_checkout.jpg",
+            "/resources/espace_order.jpg",
+            "/resources/espace_admin.jpg"
         ],
         github: "https://github.com/frlundst/E-space",
         technologies: [

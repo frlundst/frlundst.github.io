@@ -22,7 +22,7 @@ function About() {
         <div className='about-container'>
             <Row>
                 <Col>
-                    <Image className='about-container-image-mobile' src='/images/user.png' width={275} fluid={true} rounded={true}></Image>
+                    <Image className='about-container-image-mobile' src='/resources/user.png' width={275} fluid={true} rounded={true}></Image>
                 </Col>
             </Row>
             <Row xs={1} lg={2}>
@@ -48,7 +48,7 @@ function About() {
                     </h1>
                 </Col>
                 <Col>
-                    <Image className='about-container-image' src='/images/user.png' width={275} fluid={true} rounded={true}></Image>
+                    <Image className='about-container-image' src='./resources/user.png' width={275} fluid={true} rounded={true}></Image>
                 </Col>
                 <Col></Col>
             </Row>
