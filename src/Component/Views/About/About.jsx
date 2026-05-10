@@ -30,11 +30,10 @@ function About() {
                     <h1>Hi! I'm Fredrik!</h1>
                     <h2>.NET & React Developer and Computer Science Engineer</h2>
                     <p>
-                        Currently in my last year of studying BSc Computer Science
-                        at Kungliga Tekniska Högskolan (KTH) in Stockholm. I am
-                        also working at Nore Technology as a System Developer
-                        improving the performance of their financial/insurance-counseling
-                        platform by upgrading the UI from ASP.NET to React.js.
+                        I’m a full-stack developer specializing in .NET and React, with a strong interest in software engineering. 
+                        After graduating from KTH Royal Institute of Technology with a Bachelor of Engineering in Computer Science, 
+                        I joined Nore Technology, where I work on a digital financial advisory platform for Söderberg & Partners in 
+                        the UK fintech sector.
                     </p>
 
                     <Row xs={2} style={{ gap: "10px", margin: "0" }}>
