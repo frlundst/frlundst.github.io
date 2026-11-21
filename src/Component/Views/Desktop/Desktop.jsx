@@ -5,6 +5,7 @@ import "./style.css";
 import { DesktopIcon } from "./ChildComponents/DesktopIcon/DesktopIcon";
 import { MenuBar } from "./ChildComponents/MenuBar/MenuBar";
 import { Wallpaper } from "./ChildComponents/Wallpaper/Wallpaper";
+import { TouchCursor } from "./ChildComponents/TouchCursor/TouchCursor";
 
 export const LINKEDIN_URL = "https://www.linkedin.com/in/fredrik-lundstr%C3%B6m-184575180/";
 export const GITHUB_URL = "https://github.com/frlundst";
@@ -74,6 +75,8 @@ export const Desktop = () => {
                     <DesktopIcon icon={<FiLinkedin />} label="LinkedIn" href={LINKEDIN_URL} color="linear-gradient(145deg, #3d93df, #0a66c2)" />
                 </nav>
             </main>
+
+            <TouchCursor />
         </div>
     );
 };

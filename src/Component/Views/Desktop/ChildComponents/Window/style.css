@@ -102,7 +102,6 @@
     background: transparent;
     color: var(--ink-muted);
     font-size: 16px;
-    cursor: pointer;
     transition: background-color 0.15s, color 0.15s;
 }
 

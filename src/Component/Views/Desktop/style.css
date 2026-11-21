@@ -119,7 +119,6 @@
     font-size: 15px;
     font-weight: 600;
     text-decoration: none;
-    cursor: pointer;
     transition: background-color 0.15s, border-color 0.15s, color 0.15s, transform 0.15s;
 }
 
@@ -151,4 +150,29 @@
 .btn-desktop-secondary:hover {
     border-color: var(--ink);
     color: var(--ink);
+}
+
+/* ---------- Retro pixel cursors ---------- */
+
+.desktop,
+.desktop * {
+    cursor: url("/resources/cursors/arrow.png") 0 0, default;
+    cursor: -webkit-image-set(url("/resources/cursors/arrow.png") 1x, url("/resources/cursors/arrow@2x.png") 2x) 0 0, default;
+    cursor: image-set(url("/resources/cursors/arrow.png") 1x, url("/resources/cursors/arrow@2x.png") 2x) 0 0, default;
+}
+
+.desktop a,
+.desktop a *,
+.desktop button,
+.desktop button * {
+    cursor: url("/resources/cursors/hand.png") 5 0, pointer;
+    cursor: -webkit-image-set(url("/resources/cursors/hand.png") 1x, url("/resources/cursors/hand@2x.png") 2x) 5 0, pointer;
+    cursor: image-set(url("/resources/cursors/hand.png") 1x, url("/resources/cursors/hand@2x.png") 2x) 5 0, pointer;
+}
+
+.desktop input,
+.desktop textarea {
+    cursor: url("/resources/cursors/text.png") 3 7, text;
+    cursor: -webkit-image-set(url("/resources/cursors/text.png") 1x, url("/resources/cursors/text@2x.png") 2x) 3 7, text;
+    cursor: image-set(url("/resources/cursors/text.png") 1x, url("/resources/cursors/text@2x.png") 2x) 3 7, text;
 }

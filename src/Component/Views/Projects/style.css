@@ -22,7 +22,6 @@
     font-size: 14px;
     font-weight: 500;
     color: var(--ink-soft);
-    cursor: pointer;
     transition: background-color 0.15s, color 0.15s;
 }
 
