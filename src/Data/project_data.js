@@ -134,37 +134,5 @@ export const project_data = [
                 bg: 'C'
             }
         ]
-    },
-    {
-        id: "vfarecruitment",
-        title: "VFA Recruitment",
-        status: "Ongoing",
-        subtitle: "A recruitment application.",
-        descriptions: [],
-        images: [],
-        github: "https://github.com/frlundst/IV1201-Design-of-Global-Applications",
-        technologies: [
-            {
-                name: "Microservices",
-            },
-            {
-                name: "Java Spring Boot",
-                bg: 'JAVA'
-            },
-            {
-                name: "Spring Security",
-                bg: 'JAVA'
-            }, 
-            {
-                name: "Microsoft Azure"
-            },
-            {
-                name: "SQL",
-                bg: 'SQL'
-            },
-            {
-                name: "CI/CD"
-            }
-        ]
     }
 ]

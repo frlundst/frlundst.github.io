@@ -1,26 +1,36 @@
-import React from "react";
-import { Card, Button, Badge } from 'react-bootstrap';
+import { Link } from "react-router-dom";
+import { FiFolder } from "react-icons/fi";
 import "./style.css";
-import { useNavigate } from "react-router-dom";
+import { StatusPill, TechTag } from "../Tags/Tags";
 
-export const ProjectCard = ({ title, status, text, id, imagePathname, subtitle }) => {
-    const navigate = useNavigate();
+const MAX_TAGS = 3;
 
-    return <Card className='projects-container-card'>
-        <Card.Img variant="top" src={imagePathname} />
-        <Card.Body>
-            <Card.Title>{title} <Badge bg={status === "Done" ? "success" : "secondary"}>{status}</Badge> </Card.Title>
-            <Card.Subtitle style={{fontSize: "18px", fontWeight: "bold", marginBottom: "5px"}}>
-                - {subtitle}
-            </Card.Subtitle>
-            <Card.Text>
-                {text ? text.substring(0, 125) + "..." : "No description."}
-            </Card.Text>
-            <Button
-                className='projects-container-card-button'
-                variant="primary"
-                onClick={() => navigate(`/projects/${id}`)}
-            >Read more</Button>
-        </Card.Body>
-    </Card>
-}
+export const ProjectCard = ({ project }) => {
+    const { id, title, subtitle, status, images, technologies } = project;
+    const hiddenTags = technologies.length - MAX_TAGS;
+
+    return (
+        <Link to={`/projects/${id}`} className="project-card">
+            <div className="project-card-thumb">
+                {images[0] ? (
+                    <img src={images[0]} alt="" loading="lazy" />
+                ) : (
+                    <div className="project-card-placeholder"><FiFolder aria-hidden="true" /></div>
+                )}
+            </div>
+            <div className="project-card-body">
+                <div className="project-card-head">
+                    <h2 className="project-card-title">{title}</h2>
+                    <StatusPill status={status} />
+                </div>
+                <p className="project-card-subtitle">{subtitle}</p>
+                <div className="project-card-tags">
+                    {technologies.slice(0, MAX_TAGS).map(technology => (
+                        <TechTag key={technology.name} name={technology.name} bg={technology.bg} />
+                    ))}
+                    {hiddenTags > 0 && <span className="tech-tag">+{hiddenTags}</span>}
+                </div>
+            </div>
+        </Link>
+    );
+};

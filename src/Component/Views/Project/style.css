@@ -1,0 +1,108 @@
+.project-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--ink-soft);
+    text-decoration: none;
+}
+
+.project-back:hover {
+    color: var(--accent);
+}
+
+.project-back:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
+.project-title-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+}
+
+.project-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 22px;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 22px;
+}
+
+.project-description {
+    max-width: 68ch;
+}
+
+.project-description p {
+    margin: 0 0 14px;
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--ink-soft);
+}
+
+.project-description p:first-child {
+    font-size: 17.5px;
+    font-weight: 500;
+    color: var(--ink);
+}
+
+.project-gallery {
+    margin-top: 40px;
+    padding-top: 28px;
+    border-top: 1px solid var(--line);
+}
+
+.project-gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 16px;
+}
+
+.project-gallery-grid a {
+    display: block;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow:
+        0 0 0 1px var(--line),
+        0 8px 20px -12px rgba(22, 40, 50, 0.35);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.project-gallery-grid a:hover {
+    transform: translateY(-2px);
+    box-shadow:
+        0 0 0 1px rgba(28, 41, 48, 0.14),
+        0 14px 30px -14px rgba(22, 40, 50, 0.4);
+}
+
+.project-gallery-grid a:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+}
+
+.project-gallery-grid img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    object-position: top;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .project-gallery-grid a,
+    .project-gallery-grid a:hover {
+        transform: none;
+        transition: none;
+    }
+}

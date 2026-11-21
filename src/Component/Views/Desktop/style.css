@@ -1,0 +1,154 @@
+.desktop {
+    --sky-top: #e8eef2;
+    --sky-bottom: #cfdbe1;
+    --ink: #1c2930;
+    --ink-soft: #44535a;
+    --ink-muted: #6f7e86;
+    --paper: #fbfaf7;
+    --line: rgba(28, 41, 48, 0.1);
+    --accent: #0f766e;
+    --accent-strong: #0b5c56;
+    --accent-soft: #e2f0ee;
+    --mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+    color: var(--ink);
+    background: linear-gradient(180deg, var(--sky-top) 0%, var(--sky-bottom) 100%);
+    -webkit-font-smoothing: antialiased;
+}
+
+/* ---------- Layout ---------- */
+
+.desktop-area {
+    position: relative;
+    z-index: 1;
+    flex: 1;
+    min-height: 0;
+    display: grid;
+    grid-template-columns: 112px minmax(0, 1fr) 112px;
+    grid-template-rows: minmax(0, 1fr);
+    gap: 16px;
+    padding: 20px 12px 24px;
+}
+
+.desktop-icons {
+    grid-row: 1;
+    align-self: start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.desktop-icons-left {
+    grid-column: 1;
+}
+
+.desktop-icons-right {
+    grid-column: 3;
+}
+
+@media (min-width: 992px) {
+    .desktop {
+        height: 100vh;
+        height: 100dvh;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .desktop-area {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: flex-start;
+        gap: 4px;
+        padding: 16px 16px 24px;
+    }
+
+    .desktop-icons {
+        flex-direction: row;
+        gap: 4px;
+    }
+}
+
+/* ---------- Shared page elements inside windows ---------- */
+
+.page-header {
+    margin-bottom: 36px;
+}
+
+.page-title {
+    margin: 0;
+    font-size: clamp(1.75rem, 1.3rem + 1.5vw, 2.5rem);
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.025em;
+}
+
+.page-lead {
+    max-width: 60ch;
+    margin: 10px 0 0;
+    font-size: 16.5px;
+    line-height: 1.6;
+    color: var(--ink-soft);
+}
+
+.section-title {
+    margin: 0 0 12px;
+    font-family: var(--mono);
+    font-size: 12.5px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+}
+
+.btn-desktop {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    height: 42px;
+    padding: 0 18px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.15s, border-color 0.15s, color 0.15s, transform 0.15s;
+}
+
+.btn-desktop:active {
+    transform: translateY(1px);
+}
+
+.btn-desktop:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+}
+
+.btn-desktop-primary {
+    background: var(--accent);
+    color: #ffffff;
+}
+
+.btn-desktop-primary:hover {
+    background: var(--accent-strong);
+    color: #ffffff;
+}
+
+.btn-desktop-secondary {
+    background: #ffffff;
+    border-color: rgba(28, 41, 48, 0.18);
+    color: var(--ink);
+}
+
+.btn-desktop-secondary:hover {
+    border-color: var(--ink);
+    color: var(--ink);
+}

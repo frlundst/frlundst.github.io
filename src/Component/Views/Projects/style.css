@@ -1,0 +1,122 @@
+.projects-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.segmented {
+    display: inline-flex;
+    padding: 3px;
+    border-radius: 10px;
+    background: rgba(28, 41, 48, 0.06);
+}
+
+.segmented button {
+    height: 32px;
+    padding: 0 14px;
+    border: 0;
+    border-radius: 8px;
+    background: transparent;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--ink-soft);
+    cursor: pointer;
+    transition: background-color 0.15s, color 0.15s;
+}
+
+.segmented button:hover {
+    color: var(--ink);
+}
+
+.segmented button[aria-pressed="true"] {
+    background: #ffffff;
+    color: var(--ink);
+    box-shadow:
+        0 1px 2px rgba(22, 40, 50, 0.12),
+        0 0 0 1px var(--line);
+}
+
+.segmented button:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 1px;
+}
+
+.projects-search {
+    position: relative;
+    flex: 1 1 220px;
+    max-width: 320px;
+    margin: 0;
+}
+
+.projects-search svg {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    color: var(--ink-muted);
+    pointer-events: none;
+}
+
+.projects-search input {
+    width: 100%;
+    height: 38px;
+    padding: 0 12px 0 36px;
+    border: 1px solid rgba(28, 41, 48, 0.16);
+    border-radius: 10px;
+    background: #ffffff;
+    font: inherit;
+    font-size: 14.5px;
+    color: var(--ink);
+    transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.projects-search input::placeholder {
+    color: var(--ink-muted);
+}
+
+.projects-search input:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px var(--accent-soft);
+}
+
+.projects-count {
+    margin-left: auto;
+    font-family: var(--mono);
+    font-size: 12.5px;
+    color: var(--ink-muted);
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.projects-empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    padding: 48px 16px;
+    border: 1px dashed rgba(28, 41, 48, 0.18);
+    border-radius: 12px;
+    text-align: center;
+}
+
+.projects-empty p {
+    margin: 0;
+    color: var(--ink-soft);
+}
+
+@media (max-width: 480px) {
+    .projects-search {
+        max-width: none;
+    }
+
+    .projects-count {
+        margin-left: 0;
+    }
+}
